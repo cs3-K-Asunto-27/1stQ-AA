@@ -1,0 +1,189 @@
+/* Applies to all elements */
+* {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  /* Set height of the html and body elements */
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  /* flex display and column flex-flow for easier or more flexible element alignments */
+  display: flex;
+  flex-flow: column;
+}
+
+/* 
+  MAIN CONTENT SECTION
+*/
+/* Code for the main classed element */
+.main {
+  background-image: url("background.jpg"); /* Set the background image of the element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: column;
+}
+
+/* header-container classed element inside of main classed element */
+.main .header-container {
+  font-size: 56px;
+  margin-bottom: 48px;
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.main .header-container h1 {
+  font-weight: 200;
+}
+
+/* content-container classed element inside of main classed element */
+.main .content-container {
+}
+
+/* DESCRIPTION SECTION */
+.description-container {
+  align-items: center;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 32px 0px;
+  width: 100%;
+}
+
+.description-content {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 12px 0px;
+  word-spacing: 4px;
+}
+
+.description-header {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  width: 45%;
+}
+
+/* PROFILE SECTION */
+.profile-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+
+.profile {
+  align-items: center;
+  background-color: rgb(160, 160, 160);
+  border-radius: 50px;
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  height: 240px;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 600px;
+}
+
+/*
+  NAVIGATION SECTION
+*/
+.navigation-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.navigation-items-list {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navigation-item {
+  align-items: center;
+  background-color: rgb(177, 177, 177);
+  border-radius: 50px;
+  color: black;
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  height: 240px;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 420px;
+}
+
+/* 
+  TOPBAR AND CHILDREN CLASSES
+*/
+.topbar {
+  align-items: center;
+  background: white;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: space-between;
+  opacity: 100%;
+  position: fixed;
+  top: 0;
+  width: 100vw !important;
+}
+
+.topbar-item {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  width: auto;
+  margin: 0px 64px;
+}
+
+.topbar * {
+  opacity: 100%;
+}
+
+/* REUSABLE FONT STYLES */
+.cursive {
+  font-family: "Alex Brush" !important;
+}
+
+/* REUSABLE FONT COLORS */
+.color-white {
+  color: white;
+}
+
+.grey-box {
+  background-color: rgb(160, 160, 160);
+  height: 30px;
+  width: 350px;
+}
+
+#search {
+  border: 1.5px solid black;
+  font-weight: bold;
+  height: 60%;
+  margin-right: 48px;
+  width: 254px;
+}
